@@ -7,6 +7,11 @@ Install Let's Encrypt Free SSL on RunCloud.io servers Free/Paid Plan
 pip install git+https://github.com/alihusnainarshad/freessl
 ```
 
+### Uninstall
+```bash
+pip uninstall freessl
+```
+
 ### Usage
 ```bash
 usage: PROG [-h] [-i {all}] [-u {all}] [-r] [-a {disable,enable}]
