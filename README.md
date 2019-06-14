@@ -1,6 +1,11 @@
 
 # RunCloud Let's Encrypt Automation on  Free /Paid Plan
-Install Let's Encrypt Free SSL on RunCloud.io servers Free/Paid Plan
+Install Let's Encrypt Free SSL on RunCloud.io servers Free/Paid Plan.
+
+Login to Server Via Putty, Make Sure You Login as "root". You can become Root User by:
+```bash
+sudo su
+```
 
 ### Installation
 ```bash
