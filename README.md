@@ -9,7 +9,7 @@ sudo su
 
 ### Installation
 ```bash
-pip install git+https://github.com/alihusnainarshad/freessl
+pip install freessl
 ```
 
 ### Uninstall
