@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='freessl',
-	version='1.0',
+	version='1.1',
 	description='Install Free Let\s Encrypt SSL on RunCloud servers in the easy way.',
 	author="Ali Husnain",
 	author_email="info@alihusnain.ml",
