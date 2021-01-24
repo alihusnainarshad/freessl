@@ -60,7 +60,7 @@ def run_cmd(cmd):
 		raise Exception(str(e))
 
 def install_certbot():
-	cmd = 'sudo apt-get update && yes | sudo apt-get install software-properties-common && yes | sudo add-apt-repository ppa:certbot/certbot && yes | sudo apt-get update && yes | sudo apt-get install certbot| sudo apt-get update && yes | pip3 install certbot'
+	cmd = 'pip3 install certbot'
 	return run_cmd(cmd)
 
 def get_package_path(package):
