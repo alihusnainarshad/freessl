@@ -60,7 +60,7 @@ def run_cmd(cmd):
 		raise Exception(str(e))
 
 def install_certbot():
-	cmd = 'sudo apt-get update && yes | sudo apt-get install software-properties-common && yes | sudo add-apt-repository ppa:certbot/certbot && yes | sudo apt-get update && yes | sudo apt-get install certbot'
+	cmd = 'sudo apt-get update && yes | sudo apt-get install software-properties-common && yes | sudo add-apt-repository ppa:certbot/certbot && yes | sudo apt-get update && yes | sudo apt-get install certbot| sudo apt-get update && yes | pip3 install certbot'
 	return run_cmd(cmd)
 
 def get_package_path(package):
@@ -77,7 +77,7 @@ def write_vhost(appinfo):
 	c = nginx.Conf()
 	s = nginx.Server()
 	s.add(
-		nginx.Comment('SSL conf added by freessl (https://github.com/rehmatworks/runcloud-letsencrypt)'),
+		nginx.Comment('SSL conf added by freessl (https://github.com/alihusnainarshad)'),
 		nginx.Key('listen', '443 ssl http2'),
 		nginx.Key('listen', '[::]:443 ssl http2'),
 		nginx.Key('server_name', ' '.join(appinfo.get('valid_domains'))),

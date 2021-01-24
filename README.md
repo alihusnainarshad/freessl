@@ -8,12 +8,12 @@ sudo su
 
 ### Installation
 ```bash
-pip install freessl
+pip3 install freessl
 ```
 
 ### Uninstall
 ```bash
-pip uninstall freessl
+pip3 uninstall freessl
 ```
 
 ### Usage

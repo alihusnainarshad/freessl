@@ -25,7 +25,7 @@ class freessl():
 	def get_app_info(self, appname):
 		info = {}
 		if self.app_exists(appname):
-			# parse main conf to get app info
+			# parse main conf to get the app info
 			main_conf = self.app_main_conf_file(appname)
 			with open(main_conf, 'r') as conf:
 				conf_data = conf.read()
